@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Footer from "./Footer";
 
 const HomeIcon = () => (
   <svg
@@ -223,7 +224,7 @@ export default function Sidebar() {
       <Button
         variant="ghost"
         size="icon"
-        className="fixed top-4 right-4 z-50 md:hidden bg-red-600"
+        className="fixed top-4 right-4 z-50 md:hidden bg-black"
         onClick={() => setIsMobileOpen(!isMobileOpen)}
       >
         {isMobileOpen ? <XIcon /> : <MenuIcon />}
@@ -249,7 +250,10 @@ export default function Sidebar() {
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200">
             {!isCollapsed && (
-              <h1 className="text-lg font-semibold text-gray-900">Dashboard</h1>
+              <img
+                src={"https://www.truact.in/Truact_logo_reverse-01.png"}
+                className=" w-32"
+              />
             )}
 
             {/* Desktop collapse button */}
@@ -334,14 +338,6 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-
-      {/* Main content spacer for desktop */}
-      {/* <div
-        className={joinClasses(
-          "hidden md:block flex-shrink-0 transition-all duration-300",
-          isCollapsed ? "w-20" : "w-64"
-        )}
-      /> */}
     </>
   );
 }
