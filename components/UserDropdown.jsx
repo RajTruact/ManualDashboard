@@ -59,7 +59,7 @@ export default function UserDropdown() {
         className="absolute right-0 mt-[17px] flex w-[260px] flex-col rounded-2xl border border-red-700 bg-red-500 p-3 shadow-theme-lg dark:border-gray-800 dark:bg-gray-dark"
       >
         <div>
-          <span className="block font-medium text-gray-700 text-theme-sm dark:text-gray-400">
+          <span className="block font-medium text-red-700 text-theme-sm dark:text-gray-400">
             Raj Kumar Gupta
           </span>
           <span className="mt-0.5 block text-theme-xs text-gray-500 dark:text-gray-400">

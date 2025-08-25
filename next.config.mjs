@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["plus.unsplash.com", "images.unsplash.com"], // 👈 Add your image host here
+    domains: [
+      "plus.unsplash.com",
+      "images.unsplash.com",
+      "cdn-icons-png.flaticon.com",
+      "previews.123rf.com",
+      "c8.alamy.com",
+    ], // 👈 Add your image host here
   },
 };
 
